@@ -12,8 +12,7 @@
         android:layout_height="wrap_content"
         android:background="#27276E"
         android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        />
+        android:theme="?attr/actionBarTheme" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment"
@@ -21,9 +20,9 @@
         android:layout_width="match_parent"
         android:layout_height="620dp"
         android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
         app:defaultNavHost="true"
-        app:navGraph="@navigation/nav"
-        />
+        app:navGraph="@navigation/nav" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

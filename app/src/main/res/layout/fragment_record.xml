@@ -6,6 +6,11 @@
     tools:context=".recordFragment">
 
     <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        android:translationY="30dp">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,14 +25,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:translationY="110dp" >
+        android:translationY="110dp">
 
         <SearchView
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-
     </LinearLayout>
-
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,7 +39,7 @@
         android:translationY="210dp">
 
         <ListView
-            android:id="@+id/gardenScroll"
+            android:id="@+id/record_scroll"
             android:layout_width="match_parent"
             android:layout_height="350dp">
         </ListView>

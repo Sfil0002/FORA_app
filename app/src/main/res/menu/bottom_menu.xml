@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/addFragment"
+        android:checkable="false"
+        android:enabled="true"
+        android:icon="@drawable/add_checkable"
+        android:title="Add"
+        android:visible="true"
+        app:showAsAction="always"
+        app:itemTextColor="#FFFFFF"
+        />
+
+    <item
+        android:id="@+id/homeFragment"
+        android:checkable="false"
+        android:enabled="true"
+        android:icon="@drawable/home_checkable"
+        android:title="Home"
+        android:visible="true"
+        app:showAsAction="always"
+        app:itemTextColor="#FFFFFF"
+        />
+
+    <item
+        android:id="@+id/recordFragment"
+        android:checkable="true"
+        android:title="Records"
+        android:visible="true"
+        app:showAsAction="always"
+        app:itemTextColor="#FFFFFF"
+        />
+</menu>

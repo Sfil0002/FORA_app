@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".addFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Add an Animal"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:translationY="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:translationY="120dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/name_ET"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:ems="15"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:translationY="180dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/breed_ET"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:ems="15"
+            android:hint="Breed"
+            android:inputType="text"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:translationY="240dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/sex_ET"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:ems="15"
+            android:hint="Sex"
+            android:inputType="text"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:translationY="300dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/age_ET"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:ems="15"
+            android:hint="Approximate age"
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:translationY="360dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/photoUrl_ET"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:ems="15"
+            android:hint="Photo URL"
+            android:inputType="textUri"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:translationY="420dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/des_ET"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:ems="15"
+            android:hint="Description"
+            android:inputType="textLongMessage"
+            />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/addAnimal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:translationY="500dp"
+        android:text="Add"
+        android:backgroundTint="#27276E"
+        />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:translationY="550dp"
+        android:text="Cancel"
+        android:backgroundTint="#27276E"
+        />
+
+</RelativeLayout>

@@ -47,14 +47,17 @@ public class addFragment extends Fragment
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+                             Bundle savedInstanceState)
+    {
         // Inflate the layout for this fragment
 
         View view = inflater.inflate(R.layout.fragment_add, container, false);
         Button addbutton = view.findViewById(R.id.addAnimal_button);
-        addbutton.setOnClickListener(new View.OnClickListener() {
+        addbutton.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 name_ET = view.findViewById(R.id.name_ET);
                 file_number_ET = view.findViewById(R.id.filenumber_ET);
                 breed_ET = view.findViewById(R.id.breed_ET);

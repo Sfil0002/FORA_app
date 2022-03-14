@@ -14,8 +14,8 @@
         android:text="Add an Animal"
         android:textSize="30dp"
         android:textColor="#000000"
-        android:textStyle="italic"
-        android:translationY="10dp"
+        android:textStyle="bold"
+        android:translationY="20dp"
         />
 
 
@@ -39,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center"
-        android:translationY="120dp"
+        android:translationY="130dp"
         android:orientation="horizontal" >
 
         <EditText
@@ -55,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center"
-        android:translationY="160dp"
+        android:translationY="180dp"
         android:orientation="horizontal" >
 
         <EditText
@@ -73,7 +73,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center"
-        android:translationY="200dp"
+        android:translationY="230dp"
         android:orientation="horizontal" >
 
         <EditText
@@ -91,7 +91,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center"
-        android:translationY="240dp"
+        android:translationY="280dp"
         android:orientation="horizontal" >
 
         <EditText
@@ -109,7 +109,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center"
-        android:translationY="280dp"
+        android:translationY="330dp"
         android:orientation="horizontal" >
 
         <EditText
@@ -127,7 +127,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center"
-        android:translationY="320dp"
+        android:translationY="380dp"
         android:orientation="horizontal" >
 
         <EditText
@@ -142,19 +142,21 @@
 
     <Button
         android:id="@+id/addAnimal_button"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:translationX="60dp"
+        android:layout_alignParentLeft="true"
         android:backgroundTint="#27276E"
         android:text="Add"
         android:translationY="480dp" />
 
     <Button
         android:id="@+id/cancel_button"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:translationY="530dp"
+        android:layout_alignParentRight="true"
+        android:translationX="-60dp"
+        android:translationY="480dp"
         android:text="Cancel"
         android:backgroundTint="#27276E"
         />

@@ -16,20 +16,22 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Records"
-        android:textStyle="italic"
+        android:textStyle="bold"
         android:textSize="30dp"
         android:textColor="#000000"
-        android:translationY="10dp" />
+        android:translationY="20dp" />
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:translationY="70dp">
-
+        android:translationY="70dp"
+        >
         <SearchView
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            />
+
     </LinearLayout>
     </RelativeLayout>
 

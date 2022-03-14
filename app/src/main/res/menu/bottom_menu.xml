@@ -8,7 +8,7 @@
         android:icon="@drawable/add_checkable"
         android:title="Add"
         android:visible="true"
-        app:showAsAction="always"
+        app:showAsAction="ifRoom"
         app:itemTextColor="#FFFFFF"
         />
 
@@ -19,7 +19,7 @@
         android:icon="@drawable/home_checkable"
         android:title="Home"
         android:visible="true"
-        app:showAsAction="always"
+        app:showAsAction="ifRoom"
         app:itemTextColor="#FFFFFF"
         />
 
@@ -30,7 +30,7 @@
         android:icon="@drawable/record_checkable"
         android:title="Records"
         android:visible="true"
-        app:showAsAction="always"
+        app:showAsAction="ifRoom"
         app:itemTextColor="#FFFFFF"
         />
 </menu>

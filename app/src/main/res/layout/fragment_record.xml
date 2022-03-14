@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="620dp"
-        android:translationY="30dp">
+        >
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,13 +19,13 @@
         android:textStyle="italic"
         android:textSize="30dp"
         android:textColor="#000000"
-        android:translationY="30dp" />
+        android:translationY="10dp" />
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:translationY="110dp">
+        android:translationY="70dp">
 
         <SearchView
             android:layout_width="match_parent"
@@ -35,13 +35,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:translationY="210dp">
+        android:layout_height="460dp"
+        android:translationY="150dp">
 
         <ListView
             android:id="@+id/record_scroll"
             android:layout_width="match_parent"
-            android:layout_height="350dp">
+            android:layout_height="match_parent">
         </ListView>
 
     </LinearLayout>

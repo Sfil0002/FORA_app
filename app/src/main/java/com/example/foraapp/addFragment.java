@@ -72,11 +72,19 @@ public class addFragment extends Fragment
                 file_number = file_number_ET.getText().toString();
                 breed = breed_ET.getText().toString();
                 sex = sex_ET.getText().toString();
-                approx_age= Integer.parseInt(age_ET.getText().toString());
+                try
+                {
+                    approx_age= Integer.parseInt(age_ET.getText().toString());
+                }
+                catch(NumberFormatException e)
+                    {
+                        approx_age =0;
+                    }
+
                 photo_url = photo_url_ET.getText().toString();
                 description = description_ET.getText().toString();
 
-                if(!TextUtils.isEmpty(animal_name) && !TextUtils.isEmpty(file_number) && !TextUtils.isEmpty(breed) && !TextUtils.isEmpty(sex) && !TextUtils.isEmpty(String.valueOf(approx_age)))
+                if(!TextUtils.isEmpty(animal_name) && !TextUtils.isEmpty(file_number) && !TextUtils.isEmpty(breed) && !TextUtils.isEmpty(sex) && approx_age !=0)
                 {
                     animal.setAnimal_name(animal_name);
                     animal.setFile_number(file_number);

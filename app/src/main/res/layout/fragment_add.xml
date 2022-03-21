@@ -14,15 +14,16 @@
         android:text="Add an Animal"
         android:textSize="30dp"
         android:textColor="#000000"
-        android:textStyle="italic"
-        android:translationY="30dp"
+        android:textStyle="bold"
+        android:translationY="20dp"
         />
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center"
-        android:translationY="120dp"
+        android:translationY="80dp"
         android:orientation="horizontal" >
 
         <EditText
@@ -34,6 +35,21 @@
             android:inputType="textPersonName" />
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:translationY="130dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/filenumber_ET"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:ems="15"
+            android:hint="File Number"
+            android:inputType="text" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -57,7 +73,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center"
-        android:translationY="240dp"
+        android:translationY="230dp"
         android:orientation="horizontal" >
 
         <EditText
@@ -75,7 +91,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center"
-        android:translationY="300dp"
+        android:translationY="280dp"
         android:orientation="horizontal" >
 
         <EditText
@@ -93,7 +109,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center"
-        android:translationY="360dp"
+        android:translationY="330dp"
         android:orientation="horizontal" >
 
         <EditText
@@ -111,7 +127,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center"
-        android:translationY="420dp"
+        android:translationY="380dp"
         android:orientation="horizontal" >
 
         <EditText
@@ -124,24 +140,23 @@
             />
     </LinearLayout>
 
-
-
     <Button
         android:id="@+id/addAnimal_button"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:translationY="500dp"
-        android:text="Add"
+        android:translationX="60dp"
+        android:layout_alignParentLeft="true"
         android:backgroundTint="#27276E"
-        />
+        android:text="Add"
+        android:translationY="480dp" />
 
     <Button
         android:id="@+id/cancel_button"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:translationY="550dp"
+        android:layout_alignParentRight="true"
+        android:translationX="-60dp"
+        android:translationY="480dp"
         android:text="Cancel"
         android:backgroundTint="#27276E"
         />

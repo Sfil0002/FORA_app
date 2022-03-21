@@ -8,62 +8,74 @@
     tools:context=".homeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="FORA"
-        android:textSize="30dp"
-        android:textColor="#000000"
-        android:translationY="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Friends of Rescued Animals"
-        android:textStyle="italic"
-        android:textSize="20dp"
-        android:textColor="#000000"
-        android:translationY="80dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:translationY="150dp">
-
-        <SearchView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
-
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="620dp"
         >
 
-        <ScrollView
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="FORA"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:translationY="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Friends of Rescued Animals"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationY="70dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:translationY="250dp"
-            android:layout_centerHorizontal="true" >
+            android:layout_height="40dp"
+            android:translationY="100dp">
+
+            <SearchView
+                android:id="@+id/catalog_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
 
 
-        </ScrollView>
+        </LinearLayout>
 
-    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:translationY="180dp">
+                <GridView
+                    android:id="@+id/catalog_animals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:columnWidth="200dp"
+                    android:minHeight="150dp"
+                    android:numColumns="auto_fit"
+                    android:gravity="center"
+                    android:stretchMode="columnWidth"
+                    />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
 
 </RelativeLayout>

@@ -80,7 +80,6 @@ public class addFragment extends Fragment
                     {
                         approx_age =0;
                     }
-
                 photo_url = photo_url_ET.getText().toString();
                 description = description_ET.getText().toString();
 

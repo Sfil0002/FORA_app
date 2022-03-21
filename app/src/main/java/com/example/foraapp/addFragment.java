@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -19,7 +20,8 @@ public class addFragment extends Fragment
 {
     private String animal_name, file_number, breed, sex, photo_url, description;
     private int approx_age;
-    private EditText name_ET, file_number_ET, breed_ET, sex_ET,age_ET, photo_url_ET, description_ET;
+    private EditText name_ET, file_number_ET, breed_ET, sex_ET, photo_url_ET, description_ET;
+    private EditText age_ET;
     private FirebaseDatabase database =FirebaseDatabase.getInstance("https://fora-app-ed8dc-default-rtdb.europe-west1.firebasedatabase.app/");
     private DatabaseReference FORA_Database = database.getReference("Animal");
     private Animal animal = new Animal();
@@ -76,11 +78,18 @@ public class addFragment extends Fragment
 
                 if(!TextUtils.isEmpty(animal_name) && !TextUtils.isEmpty(file_number) && !TextUtils.isEmpty(breed) && !TextUtils.isEmpty(sex) && !TextUtils.isEmpty(String.valueOf(approx_age)))
                 {
-
+                    animal.setAnimal_name(animal_name);
+                    animal.setFile_number(file_number);
+                    animal.setBreed(breed);
+                    animal.setSex(sex);
+                    animal.setApprox_age(approx_age);
+                    animal.setPhoto_url(photo_url);
+                    animal.setDescription(description);
+                    FORA_Database.push().setValue(animal);
                 }
                 else
                 {
-
+                    Toast.makeText(view.getContext(), "Please enter values.", Toast.LENGTH_SHORT).show();
                 }
 
             }

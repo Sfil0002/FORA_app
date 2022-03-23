@@ -93,10 +93,26 @@ public class addFragment extends Fragment
                     animal.setPhoto_url(photo_url);
                     animal.setDescription(description);
                     FORA_Database.push().setValue(animal);
+                    Toast.makeText(view.getContext(), "Animal added!", Toast.LENGTH_SHORT).show();
+                    name_ET.getText().clear();
+                    file_number_ET.getText().clear();
+                    breed_ET.getText().clear();
+                    sex_ET.getText().clear();
+                    age_ET.getText().clear();
+                    photo_url_ET.getText().clear();
+                    description_ET.getText().clear();
                 }
+
                 else
                 {
-                    Toast.makeText(view.getContext(), "Please enter values.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(view.getContext(), "Please enter values.", Toast.LENGTH_LONG).show();
+                    name_ET.getText().clear();
+                    file_number_ET.getText().clear();
+                    breed_ET.getText().clear();
+                    sex_ET.getText().clear();
+                    age_ET.getText().clear();
+                    photo_url_ET.getText().clear();
+                    description_ET.getText().clear();
                 }
 
             }

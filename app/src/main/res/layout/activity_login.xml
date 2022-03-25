@@ -42,7 +42,7 @@
         android:textSize="25dp"
         android:textColor="#000000"
         android:textStyle="bold"
-        android:translationY="300dp">
+        android:translationY="280dp">
 
     </TextView>
 
@@ -52,7 +52,7 @@
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
         android:background="#D3D3D3"
-        android:translationY="350dp"
+        android:translationY="320dp"
         android:inputType="text">
 
     </EditText>
@@ -67,7 +67,7 @@
         android:textSize="25dp"
         android:textColor="#000000"
         android:textStyle="bold"
-        android:translationY="420dp">
+        android:translationY="380dp">
 
     </TextView>
 
@@ -79,7 +79,7 @@
         android:layout_centerHorizontal="true"
         android:background="#D3D3D3"
         android:inputType="textPassword"
-        android:translationY="470dp">
+        android:translationY="420dp">
 
     </EditText>
 
@@ -90,7 +90,7 @@
         android:backgroundTint="#27276E"
         android:text="Sign in"
         android:translationX="80dp"
-        android:translationY="600dp">
+        android:translationY="550dp">
 
     </Button>
 
@@ -102,7 +102,7 @@
         android:backgroundTint="#27276E"
         android:text="Cancel"
         android:translationX="220dp"
-        android:translationY="600dp">
+        android:translationY="550dp">
 
     </Button>
 

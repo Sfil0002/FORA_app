@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
-import android.widget.ListView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -63,7 +62,7 @@ public class homeFragment extends Fragment {
                 {
                     Animal animal = pulledAnimal.getValue(Animal.class);
                     assert animal != null;
-                    animal_list.add(animal.toString());
+                    animal_list.add(animal.toStringShort());
                 }
                 animal_adapter = new ArrayAdapter<String>(view.getContext(), android.R.layout.simple_list_item_1,animal_list);
                 catalog_animals.setAdapter(animal_adapter);
@@ -72,7 +71,7 @@ public class homeFragment extends Fragment {
             @Override
             public void onCancelled(@NonNull DatabaseError error)
             {
-                Toast.makeText(view.getContext(), "Error reading from database", Toast.LENGTH_SHORT).show();
+                Toast.makeText(view.getContext(), "Error reading from database", Toast.LENGTH_LONG).show();
             }
         });
 

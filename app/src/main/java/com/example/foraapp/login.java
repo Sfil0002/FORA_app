@@ -70,7 +70,7 @@ public class login extends AppCompatActivity {
 
                        @Override
                        public void onCancelled(@NonNull DatabaseError error) {
-
+                           Toast.makeText(view.getContext(), "Error reading from database", Toast.LENGTH_LONG).show();
                        }
                    });
                 }

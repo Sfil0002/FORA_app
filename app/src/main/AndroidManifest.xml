@@ -10,11 +10,17 @@
         android:roundIcon="@mipmap/fora_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FORAApp">
-
+        <activity
+            android:name=".login"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".UserActivity"
             android:exported="true"
-            android:windowSoftInputMode="adjustPan">
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

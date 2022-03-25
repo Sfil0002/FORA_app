@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/fora_login"
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:translationY="60dp"
+        app:srcCompat="@drawable/fora_logo_login"
+
+        />
+
+
+    <TextView
+        android:id="@+id/admin_login_tv"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Admin login"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:translationY="210dp" >
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/admin_username_tv"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Username"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:translationY="300dp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="#D3D3D3"
+        android:translationY="350dp"
+        android:inputType="text">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/admin_password_tv"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Password"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:translationY="420dp">
+
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="#D3D3D3"
+        android:inputType="textPassword"
+        android:translationY="470dp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#27276E"
+        android:text="Sign in"
+        android:translationX="80dp"
+        android:translationY="600dp">
+
+    </Button>
+
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#27276E"
+        android:text="Cancel"
+        android:translationX="220dp"
+        android:translationY="600dp">
+
+    </Button>
+
+
+
+</RelativeLayout>

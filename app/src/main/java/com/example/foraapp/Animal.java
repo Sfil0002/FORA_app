@@ -105,10 +105,13 @@ public class Animal
 
 
     }
-
-
-
-
+    public String toStringShort()
+    {
+        return "Name: " + animal_name + '\n' +
+                "Breed: " + breed + '\n' +
+                "Sex: " + sex + '\n' +
+                "Approximate age: " + approx_age +'\n';
+    }
 
 }
 

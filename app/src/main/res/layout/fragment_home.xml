@@ -64,9 +64,9 @@
                 <GridView
                     android:id="@+id/catalog_animals"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:columnWidth="200dp"
+                    android:columnWidth="150dp"
                     android:minHeight="150dp"
                     android:numColumns="auto_fit"
                     android:gravity="center"

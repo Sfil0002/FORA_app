@@ -83,17 +83,19 @@
 
     </EditText>
 
+
     <Button
         android:id="@+id/login_button"
         android:layout_width="110dp"
         android:layout_height="55dp"
         android:backgroundTint="#27276E"
         android:text="Sign in"
-        android:translationX="80dp"
-        android:translationY="550dp">
+        android:textColor="#FFFFFF"
+        android:translationX="-80dp"
+        android:translationY="550dp"
+        android:layout_centerHorizontal="true">
 
     </Button>
-
 
     <Button
         android:id="@+id/cancel_button"
@@ -101,8 +103,10 @@
         android:layout_height="55dp"
         android:backgroundTint="#27276E"
         android:text="Cancel"
-        android:translationX="220dp"
-        android:translationY="550dp">
+        android:textColor="#FFFFFF"
+        android:translationX="80dp"
+        android:translationY="550dp"
+        android:layout_centerHorizontal="true">
 
     </Button>
 

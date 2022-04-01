@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:translationY="10dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".addFragment">
 
@@ -144,8 +145,7 @@
         android:id="@+id/addAnimal_button"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:translationX="60dp"
-        android:layout_alignParentLeft="true"
+        android:translationX="50dp"
         android:backgroundTint="#27276E"
         android:text="Add"
         android:translationY="480dp" />
@@ -154,8 +154,7 @@
         android:id="@+id/cancel_button"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:translationX="-60dp"
+        android:translationX="190dp"
         android:translationY="480dp"
         android:text="Cancel"
         android:backgroundTint="#27276E"

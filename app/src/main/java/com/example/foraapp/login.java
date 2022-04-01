@@ -60,7 +60,7 @@ public class login extends AppCompatActivity {
                            String pass = (String) snapshot.child("Password").getValue();
                            String user = (String) snapshot.child("Username").getValue();
 
-                           if (!username.equals(user) && !password.equals(pass)) {
+                           if (!username.equals(user) || !password.equals(pass)) {
                                Toast.makeText(login.this, "Password or username incorrect", Toast.LENGTH_SHORT).show();
                            }
                            else {

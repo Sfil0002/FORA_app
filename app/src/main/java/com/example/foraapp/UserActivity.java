@@ -32,7 +32,9 @@ public class UserActivity extends AppCompatActivity {
                 case R.id.login_Toolbar:
                     openLogin();
                     break;
-
+                case R.id.qr_scanner:
+                    openQR_reader();
+                    break;
             }
             return true;
         });
@@ -42,4 +44,5 @@ public class UserActivity extends AppCompatActivity {
     {
         startActivity(new Intent(UserActivity.this, login.class));
     }
+    private void openQR_reader() {startActivity(new Intent(UserActivity.this, qr_reader_activity.class));}
 }

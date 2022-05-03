@@ -11,17 +11,19 @@ public class Animal
     private int approx_age;
     private String photo_url;
     private String description;
+    private String builtQRCode;
 
     public Animal() {
     }
 
-    public Animal(String animal_name, String file_number, String breed, String sex, int approx_age)
+    public Animal(String animal_name, String file_number, String breed, String sex, int approx_age, String builtQRCode)
     {
         this.animal_name = animal_name;
         this.file_number = file_number;
         this.breed = breed;
         this.sex = sex;
         this.approx_age = approx_age;
+        this.builtQRCode = qrCodeGen();
     }
 
     public Animal(String animal_name, String file_number, String breed, String sex, int approx_age, String photo_url, String description)
@@ -31,6 +33,7 @@ public class Animal
         this.breed = breed;
         this.sex = sex;
         this.approx_age = approx_age;
+        this.builtQRCode = qrCodeGen();
         this.photo_url = photo_url;
         this.description = description;
     }
@@ -75,6 +78,14 @@ public class Animal
         this.approx_age = approx_age;
     }
 
+    public String getBuiltQRCode() {
+        return builtQRCode;
+    }
+
+    public void setBuiltQRCode(String builtQRCode) {
+        this.builtQRCode = builtQRCode;
+    }
+
     public String getPhoto_url() {
         return photo_url;
     }
@@ -112,6 +123,17 @@ public class Animal
                 "Sex: " + sex + '\n' +
                 "Approximate age: " + approx_age +'\n';
     }
+    public String toLoadImage()
+    {
+        return photo_url;
+    }
+
+    public String qrCodeGen()
+    {
+        builtQRCode = animal_name + file_number;
+        return builtQRCode;
+    }
+
 
 }
 

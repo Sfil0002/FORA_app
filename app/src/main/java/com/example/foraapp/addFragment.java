@@ -92,6 +92,7 @@ public class addFragment extends Fragment
                     animal.setApprox_age(approx_age);
                     animal.setPhoto_url(photo_url);
                     animal.setDescription(description);
+                    animal.setBuiltQRCode(animal.qrCodeGen());
                     FORA_Database.push().setValue(animal);
                     Toast.makeText(view.getContext(), "Animal added!", Toast.LENGTH_SHORT).show();
                     name_ET.getText().clear();

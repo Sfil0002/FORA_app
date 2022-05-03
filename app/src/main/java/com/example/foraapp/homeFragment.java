@@ -1,5 +1,6 @@
 package com.example.foraapp;
 
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -8,8 +9,12 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
+import android.widget.ImageView;
+import android.widget.ListAdapter;
+import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -17,6 +22,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +36,6 @@ public class homeFragment extends Fragment {
     private GridView catalog_animals;
     private List<String> animal_list;
     private ArrayAdapter<String> animal_adapter;
-    private Animal animal = new Animal();
 
     public homeFragment() {
         // Required empty public constructor
@@ -53,7 +59,9 @@ public class homeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         animal_list = new ArrayList<>();
+
         catalog_animals = view.findViewById(R.id.catalog_animals);
+
         FORA_Database.addValueEventListener(new ValueEventListener()
         {
             @Override
@@ -63,9 +71,13 @@ public class homeFragment extends Fragment {
                     Animal animal = pulledAnimal.getValue(Animal.class);
                     assert animal != null;
                     animal_list.add(animal.toStringShort());
+
                 }
+
                 animal_adapter = new ArrayAdapter<String>(view.getContext(), android.R.layout.simple_list_item_1,animal_list);
                 catalog_animals.setAdapter(animal_adapter);
+
+
             }
 
             @Override

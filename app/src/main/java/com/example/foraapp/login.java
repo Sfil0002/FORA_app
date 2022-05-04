@@ -33,6 +33,13 @@ public class login extends AppCompatActivity {
         Button login_button = findViewById(R.id.login_button);
         Button cancel_button = findViewById(R.id.cancel_button);
 
+        cancel_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                login.super.finish();
+            }
+        });
+
 
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override

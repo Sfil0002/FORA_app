@@ -7,9 +7,16 @@
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/drawable/add_Icon_Selected_background.xml" value="0.214" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/drawable/add_Icon_Unselected_background.xml" value="0.214" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/drawable/add_checkable.xml" value="0.214" />
+        <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/drawable/add_icon_selected_background.xml" value="0.1535" />
+        <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/drawable/add_icon_unselected_background.xml" value="0.1535" />
+        <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/drawable/email_foreground.xml" value="0.2325" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/drawable/home_checkable.xml" value="0.209" />
+        <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/drawable/home_icon_selected_background.xml" value="0.2325" />
+        <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/drawable/home_icon_unselected_background.xml" value="0.2325" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.243" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/drawable/record_checkable.xml" value="0.211" />
+        <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/drawable/record_icon_selected_background.xml" value="0.2325" />
+        <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/drawable/record_icon_unselected_background.xml" value="0.2325" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/drawable/side_nav_bar.xml" value="0.218" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/layout/activity_login.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/layout/activity_main.xml" value="0.33" />
@@ -17,6 +24,7 @@
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/layout/activity_starting.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/layout/activity_user.xml" value="0.25" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/layout/addFragment.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/layout/admin_popup.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/layout/app_bar_starting.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/layout/content_starting.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/layout/fragment_add.xml" value="0.38697916666666665" />
@@ -24,7 +32,11 @@
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/layout/fragment_home.xml" value="0.3397129186602871" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/layout/fragment_record.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/layout/fragment_slideshow.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/layout/grid_image_view.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/layout/grid_imageview.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/layout/nav_header_starting.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/layout/qr_gen.xml" value="0.3729166666666667" />
+        <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/layout/user_popup.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/menu/activity_main_drawer.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/menu/bottom_menu.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/menu/drawerview_menu.xml" value="0.38697916666666665" />
@@ -32,6 +44,7 @@
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/menu/top_menu.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/menu/top_toolbar_menu.xml" value="0.38333333333333336" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/mipmap-anydpi-v26/add_Icon_Selected.xml" value="0.185" />
+        <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/mipmap-anydpi-v26/add_icon_selected.xml" value="0.1535" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/mipmap-anydpi-v26/fora_icon.xml" value="0.243" />
         <entry key="..\:/Users/Sebastian Filipek/Documents/FORAapp/app/src/main/res/mipmap-anydpi-v26/fora_icon_round.xml" value="0.243" />
       </map>

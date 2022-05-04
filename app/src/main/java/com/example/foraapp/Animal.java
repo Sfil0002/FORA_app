@@ -111,6 +111,7 @@ public class Animal
                 "Breed: " + breed + '\n' +
                 "Sex: " + sex + '\n' +
                 "Approximate age: " + approx_age +'\n'+
+                "Generate QR Code: " + builtQRCode + '\n'+
                 "Photo URL: " + photo_url + '\n' +
                 "Description: " + description + '\n';
 

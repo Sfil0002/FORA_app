@@ -2,12 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.foraapp">
-
-    <!--Permission for camera-->
-    <uses-permission android:name="android.permission.CAMERA" />
-    <!--Permission to vibrate-->
-    <uses-permission android:name="android.permission.VIBRATE"/>
-
+    <!-- Permission for camera -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -16,6 +13,12 @@
         android:roundIcon="@mipmap/fora_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FORAApp">
+        <activity
+            android:name=".qrGen"
+            android:exported="false" />
+        <activity
+            android:name=".admin_popup"
+            android:exported="false" />
         <activity
             android:name=".qr_reader_activity"
             android:exported="false" />

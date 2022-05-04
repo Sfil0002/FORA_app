@@ -140,16 +140,19 @@
             android:inputType="textLongMessage"
             />
     </LinearLayout>
-
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:translationY="-60dp">
     <Button
         android:id="@+id/addAnimal_button"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:translationX="60dp"
         android:backgroundTint="#27276E"
         android:text="Add"
-        android:translationY="480dp" />
+        android:translationX="60dp"
+         />
 
     <Button
         android:id="@+id/cancel_button"
@@ -157,9 +160,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:translationX="-60dp"
-        android:translationY="480dp"
+
         android:text="Cancel"
         android:backgroundTint="#27276E"
         />
+</RelativeLayout>
 
 </RelativeLayout>

@@ -121,7 +121,8 @@ public class Animal
         return "Name: " + animal_name + '\n' +
                 "Breed: " + breed + '\n' +
                 "Sex: " + sex + '\n' +
-                "Approximate age: " + approx_age +'\n';
+                "Approximate age: " + approx_age +'\n' +
+                "Description: " + description + '\n';
     }
     public String toLoadImage()
     {

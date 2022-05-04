@@ -24,31 +24,42 @@
             android:textColor="@color/black"/>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="550dp"
-        android:translationY="50dp">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:translationY="40dp"
+            >
+
             <ImageView
                 android:id="@+id/pulledImage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
                 >
 
             </ImageView>
 
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="280dp">
+
             <ListView
                 android:id="@+id/pulledItem"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="300dp">
 
             </ListView>
 
         </LinearLayout>
 
-    </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

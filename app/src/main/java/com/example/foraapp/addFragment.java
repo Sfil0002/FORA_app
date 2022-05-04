@@ -93,7 +93,8 @@ public class addFragment extends Fragment
                     animal.setPhoto_url(photo_url);
                     animal.setDescription(description);
                     animal.setBuiltQRCode(animal.qrCodeGen());
-                    FORA_Database.push().setValue(animal);
+                    //FORA_Database.push().setValue(animal);
+                    FORA_Database.child(animal_name+file_number).setValue(animal);
                     Toast.makeText(view.getContext(), "Animal added!", Toast.LENGTH_SHORT).show();
                     name_ET.getText().clear();
                     file_number_ET.getText().clear();

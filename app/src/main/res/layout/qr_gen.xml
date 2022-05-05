@@ -27,6 +27,7 @@
         android:layout_centerInParent="true"
         android:id="@+id/genbutton"
         android:text="Generate"
+        android:textColor="#FFFFFF"
         android:backgroundTint="#27276E"
         />
 </RelativeLayout>

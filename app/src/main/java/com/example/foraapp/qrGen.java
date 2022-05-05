@@ -25,9 +25,9 @@ public class qrGen extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.qr_gen);
 
-            editText = (EditText)findViewById(R.id.edittext);
-            genbutton = (Button)findViewById(R.id.genbutton);
-            imageView = (ImageView)findViewById(R.id.imageview);
+            editText = findViewById(R.id.edittext);
+            genbutton = findViewById(R.id.genbutton);
+            imageView = findViewById(R.id.imageview);
 
             genbutton.setOnClickListener(new View.OnClickListener() {
                 @Override

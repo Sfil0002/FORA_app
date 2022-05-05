@@ -61,20 +61,20 @@ public class recordFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_record, container, false);
-        searchView = view.findViewById(R.id.search_bar);
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                recordFragment.this.animal_adapter.getFilter().filter(query);
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String s) {
-                recordFragment.this.animal_adapter.getFilter().filter(s);
-                return false;
-            }
-        });
+//        searchView = view.findViewById(R.id.search_bar);
+//        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+//            @Override
+//            public boolean onQueryTextSubmit(String query) {
+//                recordFragment.this.animal_adapter.getFilter().filter(query);
+//                return false;
+//            }
+//
+//            @Override
+//            public boolean onQueryTextChange(String s) {
+//                recordFragment.this.animal_adapter.getFilter().filter(s);
+//                return false;
+//            }
+//        });
         animal_list = new ArrayList<>();
         record_scroll = view.findViewById(R.id.record_scroll);
         FORA_Database.addValueEventListener(new ValueEventListener()

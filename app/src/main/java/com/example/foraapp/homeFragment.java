@@ -71,7 +71,7 @@ public class homeFragment extends Fragment {
 
         catalog_animals = view.findViewById(R.id.catalog_animals);
 
-
+        dogList.clear();
         FORA_Database.addValueEventListener(new ValueEventListener()
         {
             @Override

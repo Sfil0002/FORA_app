@@ -149,9 +149,11 @@
         android:id="@+id/addAnimal_button"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:backgroundTint="#27276E"
+        android:textColor="#FFFFFF"
         android:text="Add"
-        android:translationX="60dp"
+        android:translationX="50dp"
          />
 
     <Button
@@ -159,8 +161,8 @@
         android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:translationX="-60dp"
-
+        android:translationX="-50dp"
+        android:textColor="#FFFFFF"
         android:text="Cancel"
         android:backgroundTint="#27276E"
         />

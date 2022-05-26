@@ -29,6 +29,7 @@
         android:text="Generate"
         android:textColor="#FFFFFF"
         android:backgroundTint="#27276E"
+
         />
 </RelativeLayout>
 

@@ -83,13 +83,18 @@ public class addFragment extends Fragment
                 photo_url = photo_url_ET.getText().toString();
                 description = description_ET.getText().toString();
 
-                if(!TextUtils.isEmpty(animal_name) && !TextUtils.isEmpty(file_number) && !TextUtils.isEmpty(breed) && !TextUtils.isEmpty(sex) && approx_age !=0)
+                if(!TextUtils.isEmpty(animal_name) && !TextUtils.isDigitsOnly(animal_name) && !TextUtils.isEmpty(file_number)
+                        && !TextUtils.isEmpty(breed) && !TextUtils.isDigitsOnly(breed)&& !TextUtils.isEmpty(sex) && !TextUtils.isDigitsOnly(sex) && approx_age !=0)
                 {
                     animal.setAnimal_name(animal_name);
                     animal.setFile_number(file_number);
                     animal.setBreed(breed);
                     animal.setSex(sex);
                     animal.setApprox_age(approx_age);
+                    if(TextUtils.isEmpty(photo_url))
+                    {
+                        photo_url = "Insert image URL for dog";
+                    }
                     animal.setPhoto_url(photo_url);
                     animal.setDescription(description);
                     animal.setBuiltQRCode(animal.qrCodeGen());
@@ -107,7 +112,7 @@ public class addFragment extends Fragment
 
                 else
                 {
-                    Toast.makeText(view.getContext(), "Please enter values.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(view.getContext(), "Please enter values with * or correct values.", Toast.LENGTH_LONG).show();
                     name_ET.getText().clear();
                     file_number_ET.getText().clear();
                     breed_ET.getText().clear();

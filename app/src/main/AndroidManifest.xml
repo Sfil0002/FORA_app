@@ -25,14 +25,17 @@
         <activity
             android:name=".login"
             android:exported="false"
+            android:noHistory="true"
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".MainActivity"
             android:exported="false"
+            android:noHistory="true"
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".UserActivity"
             android:exported="true"
+            android:noHistory="true"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -32,7 +32,7 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:ems="15"
-            android:hint="Name"
+            android:hint="Name *"
             android:inputType="textPersonName" />
     </LinearLayout>
 
@@ -48,7 +48,7 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:ems="15"
-            android:hint="File Number"
+            android:hint="File Number *"
             android:inputType="text" />
     </LinearLayout>
 
@@ -64,7 +64,7 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:ems="15"
-            android:hint="Breed"
+            android:hint="Breed *"
             android:inputType="text"
             />
     </LinearLayout>
@@ -82,7 +82,7 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:ems="15"
-            android:hint="Sex"
+            android:hint="Sex *"
             android:inputType="text"
             />
     </LinearLayout>
@@ -100,7 +100,7 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:ems="15"
-            android:hint="Approximate age"
+            android:hint="Approximate age *"
             android:inputType="number"
             />
     </LinearLayout>

@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <LinearLayout
@@ -40,10 +41,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
-            android:backgroundTint="#27276E"
+            android:backgroundTint="#1A1A41"
             android:layout_centerInParent="true"
+            android:src="@mipmap/qr_gen_icon"
+            app:maxImageSize="36dp"
             android:layout_alignParentLeft="true"
             android:translationY="-20dp"
+            android:tint="#00FAFAFA"
             android:translationX="100dp">
 
         </com.google.android.material.floatingactionbutton.FloatingActionButton>
@@ -56,8 +60,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:clickable="true"
-            android:backgroundTint="#27276E"
+            android:backgroundTint="#1A1A41"
             android:layout_centerInParent="true"
+            android:src="@mipmap/edit_icon_v"
+            app:maxImageSize="39dp"
+            android:tint="#00FAFAFA"
             android:layout_alignParentRight="true"
             android:translationY="-20dp"
             android:translationX="-100dp">

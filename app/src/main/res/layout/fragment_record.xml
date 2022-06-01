@@ -31,7 +31,7 @@
         >
         <SearchView
             android:id="@+id/search_bar"
-            android:queryHint="Search Animal"
+            android:queryHint="Search by file number"
             android:background="#D3D3D3"
             app:iconifiedByDefault="false"
             android:layout_margin="2dp"

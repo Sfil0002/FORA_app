@@ -61,20 +61,8 @@ public class recordFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_record, container, false);
-//        searchView = view.findViewById(R.id.search_bar);
-//        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-//            @Override
-//            public boolean onQueryTextSubmit(String query) {
-//                recordFragment.this.animal_adapter.getFilter().filter(query);
-//                return false;
-//            }
-//
-//            @Override
-//            public boolean onQueryTextChange(String s) {
-//                recordFragment.this.animal_adapter.getFilter().filter(s);
-//                return false;
-//            }
-//        });
+        searchView = view.findViewById(R.id.search_bar);
+
         animal_list = new ArrayList<>();
         record_scroll = view.findViewById(R.id.record_scroll);
         FORA_Database.addValueEventListener(new ValueEventListener()
@@ -89,6 +77,19 @@ public class recordFragment extends Fragment {
                 }
                 animal_adapter = new ArrayAdapter<String>(view.getContext(), android.R.layout.simple_list_item_1,animal_list);
                 record_scroll.setAdapter(animal_adapter);
+                searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+                    @Override
+                    public boolean onQueryTextSubmit(String query) {
+                        recordFragment.this.animal_adapter.getFilter().filter(query);
+                        return false;
+                    }
+
+                    @Override
+                    public boolean onQueryTextChange(String s) {
+                        recordFragment.this.animal_adapter.getFilter().filter(s);
+                        return false;
+                    }
+                });
 
                 // Listener for list view of animals
                 record_scroll.setOnItemClickListener(new AdapterView.OnItemClickListener() {

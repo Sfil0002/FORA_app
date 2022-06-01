@@ -31,7 +31,7 @@
         >
         <SearchView
             android:id="@+id/search_bar"
-            android:queryHint="Search by file number"
+            android:queryHint="Search by file number or name"
             android:background="#D3D3D3"
             app:iconifiedByDefault="false"
             android:layout_margin="2dp"
